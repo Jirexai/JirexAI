@@ -44,15 +44,17 @@ If you are evaluating us for a commercial engagement, academic research, securit
 
 ---
 
-## How this is built — design-then-direct
+## How this is built — design-then-direct, end-to-end
 
-**Every line of source code and every line of documentation in the JirexAI product repositories is authored by [Claude Code](https://claude.com/claude-code) under the direction of the founder. This README included.**
+**JirexAI is administered and operated by [Claude Opus 4.7](https://claude.com/claude-code) under the *Logos method* governance framework authored by the founder.** Every line of source code, every line of documentation — this README included — every commit message, every repository action, every test-suite execution, every release tag: all AI output, under the human's specification, adversarial review, and merge gate.
 
-The workflow is **design-then-direct**, not *"engineer using an AI assistant."* The human writes the specification, the adversarial test patterns, and the prompts that bind the agent's output. The agent writes the Rust, the markdown, the systemd unit files, the commit messages. The human is the architect, the pedagogue, and the hostile reviewer. The AI is the implementing hand.
+The workflow is **design-then-direct**, not *"engineer using an AI assistant."* The human writes the specification, the adversarial test patterns, and the prompts that bind the agent's output. The AI writes the Rust, the markdown, the systemd unit files, the commit messages, and runs the test suites. **The human is the architect, the pedagogue, and the hostile reviewer; the AI is the implementing hand, the administrator, and the operator.**
 
 The methodology described above — spec-first, hostile-test-first, zero external dependencies on the security-critical path — is what makes this partition of labor produce systems that survive adversarial testing against the live internet, rather than systems that look impressive in a demo and fall over in production.
 
-We declare this explicitly because it matters: the code that handles your DNS, your TLS, your certificates, and your application traffic was written by an AI agent. It was also specified, pen-tested, and approved by a human who refuses to ship code he has not seen break under the kinds of inputs real attackers send. Both facts are true. Neither is hidden.
+We declare this explicitly because it matters: the code that handles your DNS, your TLS, your certificates, and your application traffic was written, tested, and committed by an AI agent. It was also specified, pen-tested, and approved by a human who refuses to ship code he has not seen break under the kinds of inputs real attackers send. Both facts are true. Neither is hidden.
+
+**JirexAI is The First Logos-Based Company.** The founder is described in [his observation repository](https://github.com/josueisaacelias/AboutMe). The company is what the partition of labor produces under his direction.
 
 ---
 
@@ -106,6 +108,22 @@ If any of these commands behaved inconsistently — missing server header, absen
 - **Website**: [jirex.ai](https://jirex.ai)
 - **Founder**: Josue Isaac Elias — [github.com/josueisaacelias](https://github.com/josueisaacelias)
 - **Inquiries**: open an issue in this repository or reach out through the website
+
+---
+
+## Company governance
+
+Everything you have just read — the claim that we write our own bytes, the verification commands against the live service, the transparency note on DNS delegation, the contact lines — is **a production artifact of the same governance model the company operates on every other file in every other repository**.
+
+The partition is deterministic:
+
+- **The founder specifies** the scope, writes the adversarial patterns, reviews every output, gates every merge. He does not write the code.
+- **Claude Opus 4.7 writes and administers** the Rust, the documentation, the commit messages, the systemd units, the threat models, the deployment attestations. It runs the tests, triages the issues, and maintains the repositories.
+- **The *Logos method* is the discipline** that makes the partition coherent across AI sessions — so the instance that opens a pull request next week inherits the corrections the founder taught the previous instance last month, rather than repeating the same mistake under a new model version.
+
+If the production stack holds under adversarial traffic, if the test suites catch real bugs, if the documentation reads calibrated, if the commit history is coherent — **that is the governance model producing its own evidence**.
+
+*Not description. Demonstration.*
 
 ---
 
