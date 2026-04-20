@@ -9,7 +9,9 @@ Cybersecurity infrastructure built from primitives.
 
 ## What we do
 
-JirexAI builds networking and cybersecurity infrastructure in Rust, with a posture rarely taken in 2026: **we write the bytes ourselves against the RFCs, rather than pulling the usual third-party ecosystem onto our security-critical path.**
+**JirexAI builds infrastructure.** Seven product lines ship from a single shared stack: a core networking platform (DNS, TLS, ACME, web server, post-quantum crypto — all in production at jirex.ai), a Logos-grade cybersecurity suite for Unix servers, a data layer, audio and video codecs, biometric identification, a CPU-first LLM inference runtime, and an identity-and-transport layer with post-quantum signatures deployed today. A longer-horizon research program (see [Our vision](./BEYOND_BINARY.md)) works on the substrate beneath them. The full catalog with current status is in **[PRODUCTS.md](./PRODUCTS.md)**.
+
+The posture we bring is rarely taken in 2026: **we write the bytes ourselves against the RFCs**, rather than pulling the usual third-party ecosystem onto our security-critical path.
 
 This is a **supply-chain decision**. For a cybersecurity vendor, depending on the same upstream libraries as every other shop is a category error: the blast radius of a single upstream compromise becomes the whole industry's problem. We keep our trust base as small as the language runtime itself.
 
