@@ -72,13 +72,9 @@ The discipline is binary-native today — the hardware still runs at standard vo
 
 ### Computation on geometry, running today
 
-A curve — the geometric representation of an audio waveform, a cardiac signal, a radar return — becomes the *object* of computation, not an array of samples. A physics equation applied to that curve *is* a filter:
+A curve — the geometric representation of an audio waveform, a cardiac signal, a radar return — becomes the *object* of computation, not an array of samples. A physics equation applied to that curve *is* a filter: a damped oscillator driven by the curve, adding physical resonance that makes the difference between "it sounds like a recording" and "it sounds like the room."
 
-```
-m · x″(t) + β · x′(t) + k · (x(t) − C(t)) = 0
-```
-
-A damped harmonic oscillator driven by the curve `C(t)`. In audio, this adds the physical resonance that makes the difference between "it sounds like a recording" and "it sounds like the room." It evaluates in roughly 15 multiplications per output sample on a Cortex-M0+ microcontroller. No GPU, no neural network, no lookup table.
+The operation is lightweight enough to run on a bare-metal microcontroller — no GPU, no neural network, no lookup table.
 
 **The processor is the geometry.** That is analog-geometric computation. On binary hardware. Today.
 
