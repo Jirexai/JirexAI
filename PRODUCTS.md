@@ -98,6 +98,16 @@ Continuous-representation biometric identification from physiological signals ca
 
 → **[Read more](./biometric-identity.md)**
 
+## [Inference runtime](./inference-runtime.md)
+
+Pure-Rust LLM inference on CPU — one binary, zero Python, zero C dependencies. Measurably faster than the mainstream CPU alternative on identical hardware and models.
+
+| Component | Status |
+|---|---|
+| LLM inference runtime | In Development |
+
+→ **[Read more](./inference-runtime.md)**
+
 ## Research program — the Logos method
 
 Longer-horizon work: what does computing look like when it is built, from the substrate up, under the Logos method rather than the conventions inherited from the 1970s? Each item below is a published specification; implementation follows the same spec-first / hostile-test-first discipline as the rest of the stack. One page per research item.
