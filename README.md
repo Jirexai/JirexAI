@@ -31,6 +31,10 @@ For the full list of products across **In Production · In Development · In Des
 
 The components listed are the **productized surface** of an **integrated stack of 32+ crates** where every crate depends only on our own primitives up the chain: a single shared identity layer, a single wire transport, a single hashing primitive, a single proprietary arithmetic substrate. Coherence by construction, not by post-hoc documentation. A `cargo tree` over any product crate shows the full dependency graph without ever crossing into the public ecosystem on the security-critical path.
 
+### Our vision — The Logos Method
+
+The productized stack above is the visible layer. The longer arc — why every layer above the wire is a compounding compromise of 1940s decisions, and what replaces it — is in **[BEYOND_BINARY.md](./BEYOND_BINARY.md)**. Technical architecture of the substrate itself is disclosed to qualified evaluators under NDA.
+
 ---
 
 ## How we build
@@ -130,7 +134,7 @@ The Logos method is not domain-specific. The company's current productization fo
 
 **Transparency note on DNS delegation.** If you run `dig jirex.ai NS +short` you will see that the apex of `jirex.ai` is still delegated at Google Cloud DNS — a legacy arrangement from before our own authoritative nameserver existed, and one we have deliberately deferred migrating to reduce single-point-of-failure risk during the hackathon window. The subzone that actually matters for our security posture — **`acme.jirex.ai`**, where DNS-01 challenges for wildcard certificates land — is authoritatively served by our own shem nameserver at `ns.jirex.ai`. That means the path that governs our certificate issuance already runs on our own stack, even though the apex resolution does not yet. The full apex migration is on the roadmap, not hidden.
 
-If any of these commands behaved inconsistently — missing server header, absent security headers, non-7ⁿ TTLs, failed TLS handshake, reflection-amplified response to the spoof, asymmetric dual-stack responses — the claim would not survive. **They do not misbehave.**
+If any of these commands behaved inconsistently — missing server header, absent security headers, non-canonical TTLs, failed TLS handshake, reflection-amplified response to the spoof, asymmetric dual-stack responses — the claim would not survive. **They do not misbehave.**
 
 ---
 
