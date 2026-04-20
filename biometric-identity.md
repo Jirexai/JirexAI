@@ -16,19 +16,29 @@ This track sits at the intersection of our [identity & transport layer](./identi
 
 Identification from heartbeat waveforms captured by consumer-grade physiological sensors. The signal is segmented into beat units, aligned, and fit to a small set of parameters. Matching is direct distance in a low-dimensional space.
 
-Validated on public cardiac datasets with accuracy comparable to the best ML-based approaches in the literature. Numbers, dataset names, and reproducibility steps disclosed under NDA.
+Validated on public cardiac datasets:
+
+- **BIDMC** (53 subjects, cross-session, single-lead ECG): **94.3%**
+- **PTB-XL** (200 subjects, cross-day, 6 limb leads): **94.3%** raw · **100%** with confidence gate (8% rejected as low-confidence)
+- **PPG (smartwatch-class)** on BIDMC: **83.0%**
+
+Hardware target: consumer chest-strap ECG via BLE (~130 Hz). Enrolment takes under 60 seconds.
 
 ## Vocal identity — In Development
 
 Speaker identification from the spectral envelope of voice audio. Same discipline as the cardiac work: the envelope is fit to a small number of parameters; matching is direct. No MFCC, no deep embeddings, no acoustic model.
 
-Validated on a widely-used public speaker corpus. Numbers and methodology disclosed under NDA.
+Validated on public speaker corpus:
+
+- **VoxCeleb1** (40 speakers, cross-session, different days): **97.1%** (per-utterance averaged spectrum, weighted vote of 10)
+
+Hardware target: any phone microphone. Enrolment: 5 utterances (~30 seconds each).
 
 ## Bimodal fusion — In Development
 
 Cardiac and vocal identity combined under a single confidence gate. The two modalities have complementary failure modes — the cardiac channel is hard to forge but requires a sensor; the vocal channel is universally accessible but easier to imitate. Together they close the gap each leaves open.
 
-The bimodal implementation targets phone-class hardware plus a chest-strap cardiac sensor — no server-side inference, no cloud dependency, no ML at runtime. Enrolment takes under a minute; identification takes a few seconds.
+The bimodal implementation targets phone-class hardware plus a chest-strap cardiac sensor — no server-side inference, no cloud dependency, no ML at runtime. Enrolment takes around a minute combined; identification takes a few seconds.
 
 ---
 
