@@ -3,7 +3,7 @@
 **The First Logos-Based Company.**
 Cybersecurity infrastructure built from primitives.
 
-> *"Jehová-jireh" — יהוה יראה — "The Lord will provide"* (Gen 22:14)
+> *"Jehová-jireh" — "The Lord will provide"* (Gen 22:14)
 
 ---
 
@@ -131,6 +131,10 @@ The **same governance framework** has produced verifiable outputs outside cybers
 
 - **ARC-AGI-3** (François Chollet's abstract-reasoning benchmark, interactive-games variant) — **3 games solved at 6/6** (FT09, R11L, SC25) under AI direction. Run logs, prompts, methodology artifacts available to serious evaluators on request.
 - **Kaggle Titanic** — top-5% without machine learning, using a proprietary mathematical approach (parametric model-fitting over feature space). Current ranking: [kaggle.com/josueisaacelias](https://www.kaggle.com/josueisaacelias).
+- **Provisional patent application #63/997,298** — public USPTO record covering the geometric encoding thesis underlying the proprietary mathematical approach. Priority date is documented and verifiable; the filing establishes the independence of the thesis from academic publication pipelines.
+- **Public pedagogy repositories** — two repositories where the same AI-authored + human-directed partition is visible in its form as pedagogy rather than production code, both under CC BY-NC-SA 4.0:
+  - [**Jirexai/how-to-beat-my-own-weights**](https://github.com/Jirexai/how-to-beat-my-own-weights) — *"An AI wrote its own vulnerability report. 10 concrete tips from Claude Opus 4.6 to defeat hallucinations, reward hacking, and prompt injection — each backed by a real bug found and fixed in production."* Bilingual EN / ES.
+  - [**Jirexai/how-to-get-the-best-out-of-ai-27-languages**](https://github.com/Jirexai/how-to-get-the-best-out-of-ai-27-languages) — *"How to get the best out of AI — honest 27-language guide written from inside an AI."* For audiences underserved by the current AI ecosystem: parents, immigrants, older adults, people without access to doctors or lawyers.
 
 The Logos method is not domain-specific. The company's current productization focus is cybersecurity; the framework generalizes.
 
