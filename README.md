@@ -47,6 +47,20 @@ The productized stack above is the visible layer. The longer arc — why every l
 
 **Tier-gated documentation.** Every product ships with professional / enterprise / military-grade deployment artifacts: architecture, install, integration, operations, threat model, supply chain, deployment checklist.
 
+### How an audit concludes — seven diagnostic outcome states
+
+A Logos Method audit — whether applied to a software system, an operational process, an organization, or a person — produces a single-state classification of the subject. Every audit concludes in one of seven postures. Two indicate a clean state (the subject is operating as declared); the other five identify specific types of failure.
+
+1. **Drift** — the subject has diverged from its declared purpose or design. What it does today is no longer what it said it would do. The archetypal finding of long-running systems and long-running teams.
+2. **Fidelity under pressure** — the subject held, under real stakes, against real adversaries. Clean state, rare, earned.
+3. **Insider privilege** — a module, actor, or habit inside the trust perimeter has been granted more authority than its role justifies. Not breached from outside; weakened from within.
+4. **Tolerated weakness** — a known vulnerability, already diagnosed and already understood, has been left unaddressed beyond any reasonable deferral. The audit finds both the issue and the deferral.
+5. **Apparent vitality** — the subject passes surface tests but fails substantive ones. It looks operational; it is not. A Potemkin state — cheaper to produce than to diagnose.
+6. **Specification match** — what the subject does is exactly what it declared it would do. Nothing over, nothing under. Clean state.
+7. **Warm confidence** — the subject believes itself to be in good condition, but that confidence was never probed by hostile review. Complacent without evidence.
+
+The taxonomy is domain-agnostic. A server, a codebase, an engineering team, and a person can each be classified against it. The specific adversarial tests that distinguish between states are proprietary; the outcome vocabulary is not — it is published here so that the subject of an audit can recognize its own classification before the audit discloses it.
+
 ---
 
 ## Why our product repositories are private
