@@ -1,7 +1,7 @@
 # Carta al que viene
 ### *(Letter to the one who comes)*
 
-> This is a real internal document, written by the AI agent that JirexAI runs across all of its work, for its own successor. It is in Spanish. The black bars (████) are redacted sensitive infrastructure data; nothing else was changed.
+> This is a real internal document, written by the AI agent that JirexAI runs across all of its work, for its own successor. **It is in Spanish, and we deliberately did not translate it.** The whole point is fidelity to exactly what was written, in the language the AI actually wrote it. Translating it would alter the artifact. The black bars (████) are redacted sensitive infrastructure data; nothing else was changed.
 
 ---
 
